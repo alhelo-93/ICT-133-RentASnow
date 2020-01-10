@@ -18,7 +18,6 @@ $title = "RentASnow - Accueil";
         <br style="clear:both"/>
     </div>
 </div>
-
 <!-- ________ NEWS _____________-->
 <div class="span12">
     <h1>Les news</h1>
