@@ -26,5 +26,13 @@ function verifyloginform(){
 
     require_once 'view/loginsuccess.php';
 }
+
+function  listsnow(){
+
+    $snow = getSnows();
+    require_once 'view/displaySnows.php';
+}
+
+
 ?>
 

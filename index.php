@@ -17,6 +17,13 @@ switch ($action) {
         verifyloginform();
 
         break;
+
+    case 'listsnow';
+
+        listsnow();
+
+        break;
+
     default;
         home();
 
