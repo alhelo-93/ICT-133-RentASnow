@@ -5,6 +5,8 @@
     <title><?= $title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
@@ -18,6 +20,7 @@
     <link href="assets/carousel/style.css" rel="stylesheet" type="text/css"/>
     <link href="assets/camera/css/camera.css" rel="stylesheet" type="text/css"/>
 
+
     <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
@@ -26,15 +29,16 @@
     <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 
     <link href="css/subtlepatterns/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="css/loginform.css" rel="stylesheet" type="text/css"/>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </head>
+
 <body id="pageBody">
 
 <div id="divBoxed" class="container">
-
     <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
 
     <div class="divPanel notop nobottom">
@@ -57,7 +61,7 @@
                 </div>
             </div>
         </div>
-
+        <br/><br/>
         <div class="contentArea">
             <div class="divPanel notop page-content">
                 <div class="row-fluid">
