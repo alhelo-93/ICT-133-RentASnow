@@ -12,7 +12,7 @@ ob_start();
 $title = "RentASnow - LOGIN";
 ?>
 
-<h1> LOGIN </h1>
+<h1 style="text-align: center"> LOGIN </h1>
 <form action="?action=verifylogin" method="post">
     <div class="imgcontainer">
         <img src="css/img_avatar2.png" alt="Avatar" class="avatar">
