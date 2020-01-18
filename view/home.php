@@ -43,7 +43,6 @@ $title = "RentASnow - Accueil";
     <?php } ?>
     </tbody>
 </table>
-=======
 <div class="span12">
     <h1>Les news</h1>
     <table class="table table-bordered">
