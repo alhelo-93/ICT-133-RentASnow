@@ -23,7 +23,6 @@ function verifyloginform(){
         $message="IS not good password";
     }
 
-
     require_once 'view/loginsuccess.php';
 }
 
