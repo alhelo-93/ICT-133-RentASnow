@@ -20,7 +20,6 @@ $title = "RentASnow - Accueil";
     </div>
 </div>
 <!-- ________ NEWS _____________-->
-<<<<<<< HEAD
 
 <h1>news</h1>
 <br>
@@ -35,38 +34,14 @@ $title = "RentASnow - Accueil";
     </thead>
     <tbody>
     <?php foreach ($news as $onepieceofnews) { ?>
-    <tr>
-        <td><?= $onepieceofnews['title'] ?></td>
-        <td><?= $onepieceofnews['details'] ?></td>
-        <td><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></td>
-    </tr>
+        <tr>
+            <td><?= $onepieceofnews['title'] ?></td>
+            <td><?= $onepieceofnews['details'] ?></td>
+            <td><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></td>
+        </tr>
     <?php } ?>
     </tbody>
 </table>
-<div class="span12">
-    <h1>Les news</h1>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>Time</th>
-            <th>Details</th>
-            <th>Titre</th>
-
-        </tr>
-        </thead>
-        <tbody>
-        <?php foreach ($news as $onepieceofnews) { ?>
-            <tr>
-                <td><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></td>
-                <td><?= $onepieceofnews['details'] ?></td>
-                <td><?= $onepieceofnews['title'] ?></td>
-            </tr>
-        <?php } ?>
-        </tbody>
-    </table>
-</div>
->>>>>>> b2842ae284b735b084b7b65cacd2dfb7a492c1c9
-
 
 <script src="assets/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
 <script src="assets/camera/scripts/camera.min.js" type="text/javascript"></script>
