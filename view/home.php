@@ -21,7 +21,7 @@ $title = "RentASnow - Accueil";
 </div>
 <!-- ________ NEWS _____________-->
 
-<h1>news</h1>
+<h1 style="text-align: center">news</h1>
 <br>
 <table class="table table-bordered">
     <thead>

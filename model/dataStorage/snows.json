@@ -6,13 +6,16 @@
     "Brand": "Wolfgang Nyvelt"
   },
   {
-    "title": "Enfin",
-    "date": "2019-12-02",
-    "details": "Le Burton X512 est l\u00e0! Selon les sp\u00e9cialistes, c'est ce qui se fait de mieux pour le Big Air."
+    "name": "Salomon First Call ",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt"
   },
   {
-    "title": "Des renforts",
-    "date": "2020-01-01",
-    "details": "Nous accueillons Lo\u00efc d\u00e8s le mois prochain pour renforcer notre \u00e9quipe de pr\u00e9parateurs"
+    "name": "Salomon First Call ",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt"
   }
+
 ]

@@ -6,6 +6,6 @@ function getNews()
 }
 function getSnows()
 {
-    return json_decode(file_get_contents("model/dataStorage/news.json"),true);
+    return json_decode(file_get_contents("model/dataStorage/snows.json"),true);
 }
 ?>

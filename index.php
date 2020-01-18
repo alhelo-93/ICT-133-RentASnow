@@ -18,9 +18,9 @@ switch ($action) {
 
         break;
 
-    case 'listsnow';
+    case 'displaySnows';
 
-        listsnow();
+        getdisplaySnows();
 
         break;
 

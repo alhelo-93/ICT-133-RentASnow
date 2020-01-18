@@ -12,7 +12,8 @@ ob_start();
 $title = "RentASnow - Welcome";
 ?>
 
-<h1> <?= $message ?> </h1>
+<h1 class="alert alert-success" role="alert"> <?= $message ?> </h1>
+<h1 class="alert alert-danger" role="alert" role="alert"> <?= $messagealert ?> </h1>
 
 
 

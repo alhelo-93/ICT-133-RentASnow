@@ -8,25 +8,29 @@ function home()
     $news = getNews();
     require_once 'view/home.php';
 }
-function showloginform(){
+
+function showloginform()
+{
 
     require_once 'view/login.php';
 }
 
-function verifyloginform(){
-    $password=  $_POST['psw'];
-    if($password=='Bonjour'){
+function verifyloginform()
+{
+    $password = $_POST['psw'];
+    if ($password == 'Bonjour') {
 
-        $message="Bonjour ". $_POST['uname'];
-    }else{
+        $message = "Bonjour " . $_POST['uname'];
+    } else {
 
-        $message="IS not good password";
+        $messagealert = "IS not good password";
     }
 
     require_once 'view/loginsuccess.php';
 }
 
-function  listsnow(){
+function getdisplaySnows()
+{
 
     $snow = getSnows();
     require_once 'view/displaySnows.php';
