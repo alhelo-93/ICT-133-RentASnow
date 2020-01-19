@@ -23,6 +23,11 @@ switch ($action) {
         getdisplaySnows();
 
         break;
+    case 'showditalis';
+
+        getdistalisSnows();
+
+        break;
 
     default;
         home();

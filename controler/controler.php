@@ -36,6 +36,13 @@ function getdisplaySnows()
     require_once 'view/displaySnows.php';
 }
 
+function getdistalisSnows()
+{
+
+    $snows = getSnows();
+    require_once 'view/distalisSnows.php';
+}
+
 
 ?>
 

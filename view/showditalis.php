@@ -1,6 +1,14 @@
 <?php
+/**
+ *Created by ICT-133-RentASnow.
+ *FILE_NAME:showditalis.php
+ *USER:marwa
+ *DATE:19.01.2020
+ */
+?>
+<?php
 ob_start();
-$title = "RentASnow - DisplaySnows";
+$title = "RentASnow - Showditalis";
 ?>
 
 
@@ -22,15 +30,15 @@ $title = "RentASnow - DisplaySnows";
     </tr>
     </thead>
     <tbody >
-    <?php foreach ($snows as $snow) { ?>
+
 
         <tr class="">
-            <td class="align-middle click"><?= $snow['id'] ?></td>
-            <td class="align-middle"><?= $snow['name'] ?></td>
-            <td class="align-middle"><?= $snow['Type'] ?></td>
-            <td class="align-middle"><?= $snow['Color'] ?></td>
-            <td class="align-middle"><?= $snow['Brand'] ?></td>
-            <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
+            <td class="align-middle click"></td>
+            <td class="align-middle"></td>
+            <td class="align-middle"></td>
+            <td class="align-middle"></td>
+            <td class="align-middle"></td>
+            <td><img src="view/images/" class="polaroid">
 
 
         </tr>
@@ -39,7 +47,7 @@ $title = "RentASnow - DisplaySnows";
         </tr>
 
 
-    <?php } ?>
+
     </tbody>
 </table>
 
