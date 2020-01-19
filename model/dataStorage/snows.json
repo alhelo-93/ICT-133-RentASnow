@@ -1,75 +1,84 @@
 [
   {
     "id": 1,
-    "name": "B101 ",
+    "name": "B101",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "B101_small.jpg"
+    "Color": "brown",
+    "Brand": "Burton",
+    "image": "B101_small.jpg",
+    "bigimg": "B101.jpg"
   },
   {
     "id": 2,
-    "name": "B126 ",
+    "name": "B126",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "B126_small.jpg"
+    "Color": "white",
+    "Brand": "Burton",
+    "image": "B126_small.jpg",
+    "bigimg": "B126.jpg"
   },
   {
     "id": 3,
     "name": "B327",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "B327_small.jpg"
+    "Color": "black",
+    "Brand": "Burton",
+    "image": "B327_small.jpg",
+    "bigimg": "B327.jpg"
   },
   {
     "id": 4,
     "name": "K067",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "K067_small.jpg"
+    "Color": "green",
+    "Brand": "prior",
+    "image": "K067_small.jpg",
+    "bigimg": "K067.jpg"
   },
   {
     "id": 5,
     "name": "K266",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "K266_small.jpg"
+    "Color": "black",
+    "Brand": "k2",
+    "image": "K266_small.jpg",
+    "bigimg": "K266.jpg"
   },
   {
     "id": 6,
     "name": "K409",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
+    "Color": "white",
     "Brand": "Wolfgang Nyvelt",
-    "image": "K409_small.jpg"
+    "image": "K409_small.jpg",
+    "bigimg": "K409.jpg"
   },
   {
     "id": 7,
     "name": "N100",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
-    "Brand": "Wolfgang Nyvelt",
-    "image": "N100_small.jpg"
+    "Color": "pink",
+    "Brand": "k2",
+    "image": "N100_small.jpg",
+    "bigimg": "N100.jpg"
   },
   {
     "id": 8,
     "name": "P067",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
+    "Color": "mix",
     "Brand": "Wolfgang Nyvelt",
-    "image": "P067_small.jpg"
+    "image": "P067_small.jpg",
+    "bigimg": "P067.jpg"
   },
   {
     "id": 9,
     "name": "P165",
     "Type": "Snowboard Freeride",
-    "Color": "orange",
+    "Color": "pink",
     "Brand": "Wolfgang Nyvelt",
-    "image": "P165_small.jpg"
+    "image": "P165_small.jpg",
+    "bigimg": "P165.jpg"
   }
 
 ]

@@ -25,7 +25,7 @@ $title = "RentASnow - DisplaySnows";
     <?php foreach ($snows as $snow) { ?>
 
         <tr class="">
-            <td class="align-middle click"><?= $snow['id'] ?></td>
+            <td class="align-middle"><?= $snow['id'] ?></td>
             <td class="align-middle"><?= $snow['name'] ?></td>
             <td class="align-middle"><?= $snow['Type'] ?></td>
             <td class="align-middle"><?= $snow['Color'] ?></td>
@@ -35,7 +35,7 @@ $title = "RentASnow - DisplaySnows";
 
         </tr>
         <tr>
-            <td><button  type="button" onclick=""><a href="index.php?action=showditalis" style="color: azure">Détailles</button></td>
+            <td><button  type="button" onclick=""><a href="index.php?action=showditalis&id=<?= $snow['id'] ?>" style="color: azure">Détailles</button></td>
         </tr>
 
 

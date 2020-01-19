@@ -12,44 +12,42 @@ $title = "RentASnow - Showditalis";
 ?>
 
 
+<?php foreach ($products as $product) {
+ $product['name'];
+ die("ok");
+
+}?>
 <!-- ________ NEWS _____________-->
 
 <h1 style="text-align: center">Products</h1>
 <br>
-<table class="table">
-    <thead>
-    <tr>
-        <th>#°</th>
-        <th class="text-center">name</th>
-        <th class="text-center">Type</th>
-        <th class="text-center">Color</th>
-        <th class="text-center">Brand</th>
 
-
-
-    </tr>
-    </thead>
-    <tbody >
-
-
-        <tr class="">
-            <td class="align-middle click"></td>
-            <td class="align-middle"></td>
-            <td class="align-middle"></td>
-            <td class="align-middle"></td>
-            <td class="align-middle"></td>
-            <td><img src="view/images/" class="polaroid">
-
-
-        </tr>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4 "><?= "hello" ?> </h1>
+        <img src="view/images/<?= $product['bigimg']?> " class="ditalissnow">
+        <?=var_dump($products)?>
+    </div>
+    <table class="table">
+        <thead>
         <tr>
-            <td><button  type="button" onclick=""><a href="index.php?action=showditalis" style="color: azure">Détailles</button></td>
+            <th>#°</th>
+            <th class="text-center">name</th>
+            <th class="text-center">Type</th>
+            <th class="text-center">Color</th>
+            <th class="text-center">Brand</th>
+
+
+
         </tr>
+        </thead>
+        <tbody >
+
+        </tbody>
+    </table>
+</div>
 
 
-
-    </tbody>
-</table>
 
 
 <?php

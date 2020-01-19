@@ -25,7 +25,8 @@ switch ($action) {
         break;
     case 'showditalis';
 
-        getdistalisSnows();
+        distalisSnows();
+
 
         break;
 

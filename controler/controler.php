@@ -36,11 +36,15 @@ function getdisplaySnows()
     require_once 'view/displaySnows.php';
 }
 
-function getdistalisSnows()
+function distalisSnows($snowid)
 {
+    $snow['id'] = $snowid;
+    $products = getSnows();
+    if (isset($_GET['id']) == true) {
+        $snowid = $_GET['id'];
+    }
 
-    $snows = getSnows();
-    require_once 'view/distalisSnows.php';
+    require_once 'view/showditalis.php';
 }
 
 
