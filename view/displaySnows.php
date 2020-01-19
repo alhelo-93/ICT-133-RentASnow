@@ -16,7 +16,7 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Type</th>
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
-       
+
 
 
     </tr>
@@ -24,8 +24,8 @@ $title = "RentASnow - DisplaySnows";
     <tbody >
     <?php foreach ($snows as $snow) { ?>
 
-        <tr>
-            <td class="align-middle"><?= $snow['id'] ?></td>
+        <tr class="">
+            <td class="align-middle click"><?= $snow['id'] ?></td>
             <td class="align-middle"><?= $snow['name'] ?></td>
             <td class="align-middle"><?= $snow['Type'] ?></td>
             <td class="align-middle"><?= $snow['Color'] ?></td>
@@ -35,7 +35,7 @@ $title = "RentASnow - DisplaySnows";
 
         </tr>
         <tr>
-            <td colspan="5" ><button type="button" onclick="">Click Me!</button></td>
+            <td><button type="button" onclick="">Click Me!</button></td>
         </tr>
 
 

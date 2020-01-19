@@ -1,27 +1,75 @@
 [
   {
     "id": 1,
-    "name": "Salomon First Call ",
+    "name": "B101 ",
     "Type": "Snowboard Freeride",
     "Color": "orange",
     "Brand": "Wolfgang Nyvelt",
-    "image": "B327.jpg"
+    "image": "B101_small.jpg"
   },
   {
     "id": 2,
-    "name": "Salomon First Call ",
+    "name": "B126 ",
     "Type": "Snowboard Freeride",
     "Color": "orange",
     "Brand": "Wolfgang Nyvelt",
-    "image": "B126.jpg"
+    "image": "B126_small.jpg"
   },
   {
     "id": 3,
-    "name": "Salomon First Call ",
+    "name": "B327",
     "Type": "Snowboard Freeride",
     "Color": "orange",
     "Brand": "Wolfgang Nyvelt",
-    "image": "B101.jpg"
+    "image": "B327_small.jpg"
+  },
+  {
+    "id": 4,
+    "name": "K067",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "K067_small.jpg"
+  },
+  {
+    "id": 5,
+    "name": "K266",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "K266_small.jpg"
+  },
+  {
+    "id": 6,
+    "name": "K409",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "K409_small.jpg"
+  },
+  {
+    "id": 7,
+    "name": "N100",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "N100_small.jpg"
+  },
+  {
+    "id": 8,
+    "name": "P067",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "P067_small.jpg"
+  },
+  {
+    "id": 9,
+    "name": "P165",
+    "Type": "Snowboard Freeride",
+    "Color": "orange",
+    "Brand": "Wolfgang Nyvelt",
+    "image": "P165_small.jpg"
   }
 
 ]
