@@ -17,14 +17,24 @@ function showloginform()
 
 function verifyloginform()
 {
-    $password = $_POST['psw'];
-    if ($password == 'Bonjour') {
+    //$_SESSION['out']= false;
 
-        $message = "Bonjour " . $_POST['uname'];
-    } else {
 
-        $messagealert = "IS not good password";
+    $users = getusers();
+
+
+    if (isset($_POST['uname']) && isset($_POST['psw'])) {
+        foreach ($users as  $user) {
+            if ($user['user'] == $_POST['user'] && $user['password'] == $_POST['password']) {
+
+                $_SESSION['user'] = $_POST['user'];
+
+                $message = "hello there" . $_POST['user'];
+            }
+        }
+
     }
+
 
     require_once 'view/loginsuccess.php';
 }
@@ -36,13 +46,10 @@ function getdisplaySnows()
     require_once 'view/displaySnows.php';
 }
 
-function distalisSnows($snowid)
+function distalisSnows()
 {
-    $snow['id'] = $snowid;
-    $products = getSnows();
-    if (isset($_GET['id']) == true) {
-        $snowid = $_GET['id'];
-    }
+
+    $snows = getSnows();
 
     require_once 'view/showditalis.php';
 }

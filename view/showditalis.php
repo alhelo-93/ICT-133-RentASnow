@@ -7,48 +7,66 @@
  */
 ?>
 <?php
-ob_start();
-$title = "RentASnow - Showditalis";
+
+$snows = getSnows();
+$product["id"] = $_GET["product"];
 ?>
 
 
-<?php foreach ($products as $product) {
- $product['name'];
- die("ok");
+<?php foreach ($snows as $snow) {
+    if ($snow["id"] == $product["id"]) {
+        $product = [
 
-}?>
-<!-- ________ NEWS _____________-->
+            "name" => $snow["name"],
+            "marque" => $snow["marque"],
+            "Type" => $snow["Type"],
+            "Brand" => $snow["Brand"],
+            "image" => $snow["image"],
+            "bigimage" => $snow["bigimage"],
+            "description" => $snow["description"]
+        ];
+    }
 
+
+} ?>
+<?php
+$title = "RentASnow - Showditalis";
+ob_start();
+?>
 <h1 style="text-align: center">Products</h1>
 <br>
 
-<div class="jumbotron jumbotron-fluid">
+<div>
     <div class="container text-center">
-        <h1 class="display-4 "><?= "hello" ?> </h1>
-        <img src="view/images/<?= $product['bigimg']?> " class="ditalissnow">
-        <?=var_dump($products)?>
+        <h1 class="display-4 "><?= $product['name'] ?> </h1>
+        <img src="view/images/<?= $product['bigimage'] ?> " class="ditalissnow">
+
     </div>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>#°</th>
-            <th class="text-center">name</th>
-            <th class="text-center">Type</th>
-            <th class="text-center">Color</th>
-            <th class="text-center">Brand</th>
-
-
-
-        </tr>
-        </thead>
-        <tbody >
-
-        </tbody>
-    </table>
 </div>
 
+<table class="table">
+    <thead>
+    <tr>
+
+        <th class="text-center">Discraption</th>
+        <th class="text-center">Type</th>
 
 
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td class="text-center"><?= $product['description'] ?></td>
+        <td class="text-center"><?= $product['Type'] ?></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+<button type="button" class="btn btn-outline-dark" ><a href="index.php?action=displaySnows" style="color: black">Retour</button>
 
 <?php
 $content = ob_get_clean();

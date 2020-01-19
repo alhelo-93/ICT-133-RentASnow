@@ -35,7 +35,7 @@ $title = "RentASnow - DisplaySnows";
 
         </tr>
         <tr>
-            <td><button  type="button" onclick=""><a href="index.php?action=showditalis&id=<?= $snow['id'] ?>" style="color: azure">Détailles</button></td>
+            <td><button  type="button" onclick=""><a href="index.php?action=showditalis&product=<?= $snow['id']?>" style="color: azure">Détailles</button></td>
         </tr>
 
 

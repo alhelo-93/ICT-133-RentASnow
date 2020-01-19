@@ -6,7 +6,8 @@
     "Color": "brown",
     "Brand": "Burton",
     "image": "B101_small.jpg",
-    "bigimg": "B101.jpg"
+    "bigimage": "B101.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "Color": "white",
     "Brand": "Burton",
     "image": "B126_small.jpg",
-    "bigimg": "B126.jpg"
+    "bigimage": "B126.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "Color": "black",
     "Brand": "Burton",
     "image": "B327_small.jpg",
-    "bigimg": "B327.jpg"
+    "bigimage": "B327.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "Color": "green",
     "Brand": "prior",
     "image": "K067_small.jpg",
-    "bigimg": "K067.jpg"
+    "bigimage": "K067.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "Color": "black",
     "Brand": "k2",
     "image": "K266_small.jpg",
-    "bigimg": "K266.jpg"
+    "bigimage": "K266.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "Color": "white",
     "Brand": "Wolfgang Nyvelt",
     "image": "K409_small.jpg",
-    "bigimg": "K409.jpg"
+    "bigimage": "K409.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "Color": "pink",
     "Brand": "k2",
     "image": "N100_small.jpg",
-    "bigimg": "N100.jpg"
+    "bigimage": "N100.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "Color": "mix",
     "Brand": "Wolfgang Nyvelt",
     "image": "P067_small.jpg",
-    "bigimg": "P067.jpg"
+    "bigimage": "P067.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   },
   {
     "id": 9,
@@ -78,7 +86,7 @@
     "Color": "pink",
     "Brand": "Wolfgang Nyvelt",
     "image": "P165_small.jpg",
-    "bigimg": "P165.jpg"
+    "bigimage": "P165.jpg",
+    "description": "Une planche de caractère : Le Nidecker Megalight possède l'une des formes les plus innovantes de l'industrie du sport. Les caractéristiques de surf équilibrées de cette planche de freeride vous convaincront, quelle que soit la pente de la montagne ou la difficulté de votre surf."
   }
-
 ]

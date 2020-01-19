@@ -5,7 +5,10 @@ if (isset($_GET['action'])) {
 } else {
     $action = 'home';
 }
+session_start();
+
 require "controler/controler.php";
+
 switch ($action) {
     case 'login';
 
@@ -14,7 +17,7 @@ switch ($action) {
         break;
     case 'verifylogin';
 
-        verifyloginform();
+        verifyloginform($email,$password);
 
         break;
 
