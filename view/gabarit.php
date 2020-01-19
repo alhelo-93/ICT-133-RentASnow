@@ -30,6 +30,7 @@
 
     <link href="css/subtlepatterns/custom.css" rel="stylesheet" type="text/css"/>
     <link href="css/loginform.css" rel="stylesheet" type="text/css"/>
+    <link href="css/shoppingcart.css" rel="stylesheet" type="text/css"/>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

@@ -6,30 +6,42 @@ $title = "RentASnow - DisplaySnows";
 
 <!-- ________ NEWS _____________-->
 
-<h1 style="text-align: center">news</h1>
+<h1 style="text-align: center">Products</h1>
 <br>
-<table class="table table-bordered">
+<table class="table">
     <thead>
     <tr>
-        <th>Title</th>
-        <th>details</th>
-        <th>Date</th>
+        <th>#°</th>
+        <th class="text-center">name</th>
+        <th class="text-center">Type</th>
+        <th class="text-center">Color</th>
+        <th class="text-center">Brand</th>
+       
+
 
     </tr>
     </thead>
-    <tbody>
+    <tbody >
     <?php foreach ($snows as $snow) { ?>
+
         <tr>
-            <td rowspan="2"><?= $snow['name'] ?></td>
-            <td></td>
-            <td><?= $snow['Type'] ?></td>
-            <td><?= $snow['Color'] ?></td>
+            <td class="align-middle"><?= $snow['id'] ?></td>
+            <td class="align-middle"><?= $snow['name'] ?></td>
+            <td class="align-middle"><?= $snow['Type'] ?></td>
+            <td class="align-middle"><?= $snow['Color'] ?></td>
+            <td class="align-middle"><?= $snow['Brand'] ?></td>
+            <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
+
 
         </tr>
+        <tr>
+            <td colspan="5" ><button type="button" onclick="">Click Me!</button></td>
+        </tr>
+
+
     <?php } ?>
     </tbody>
 </table>
-
 
 
 <?php

@@ -32,7 +32,7 @@ function verifyloginform()
 function getdisplaySnows()
 {
 
-    $snow = getSnows();
+    $snows = getSnows();
     require_once 'view/displaySnows.php';
 }
 

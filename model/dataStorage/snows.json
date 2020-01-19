@@ -1,21 +1,27 @@
 [
   {
+    "id": 1,
     "name": "Salomon First Call ",
     "Type": "Snowboard Freeride",
     "Color": "orange",
-    "Brand": "Wolfgang Nyvelt"
+    "Brand": "Wolfgang Nyvelt",
+    "image": "B327.jpg"
   },
   {
+    "id": 2,
     "name": "Salomon First Call ",
     "Type": "Snowboard Freeride",
     "Color": "orange",
-    "Brand": "Wolfgang Nyvelt"
+    "Brand": "Wolfgang Nyvelt",
+    "image": "B126.jpg"
   },
   {
+    "id": 3,
     "name": "Salomon First Call ",
     "Type": "Snowboard Freeride",
     "Color": "orange",
-    "Brand": "Wolfgang Nyvelt"
+    "Brand": "Wolfgang Nyvelt",
+    "image": "B101.jpg"
   }
 
 ]
