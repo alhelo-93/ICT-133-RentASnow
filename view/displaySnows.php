@@ -36,6 +36,15 @@ $title = "RentASnow - DisplaySnows";
         </tr>
         <tr>
             <td><button  type="button" onclick=""><a href="index.php?action=showditalis&product=<?= $snow['id']?>" style="color: azure">Détailles</button></td>
+            <?php if($snow['disponible'] == false) {?>
+            <td colspan="2"><p class="alert alert-danger" role="alert"><?= $snow['dateretour']?> </p></td>
+            <td colspan="3"> <p class="alert alert-danger" role="alert"><?= "ce n'est pas disponible" ?></p> </td>
+            <?php }else{ ?>
+
+                <td colspan="3"><p class="alert alert-success" role="alert"><?= "ce snowbord est disponible"?></p></td>
+
+
+            <?php }?>
         </tr>
 
 
