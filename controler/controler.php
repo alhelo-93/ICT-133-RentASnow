@@ -17,7 +17,7 @@ function showloginform()
 
 function verifyloginform($username, $password)
 {
-    //$_SESSION['out']= false;
+
 
 
     $users = getusers();
@@ -27,18 +27,18 @@ foreach ($users as $i => $user) {
     if ($user["uname"] == $username && $user["psw"] == $password) {
         $_SESSION["email"] = $username;
         $_SESSION["password"] = $password;
-
-
+        var_dump($user);
+        require_once 'view/loginsuccess.php';
 
     }
 }
-    if(!isset($_SESSION["user"])){
+    if(!isset($_SESSION["email"])){
         $_SESSION["flashmessage"] = "Le nom d'utilisateur ou le mod de passe est incorrect";
-
+            home();
     }
 
 
-    require_once 'view/loginsuccess.php';
+
 }
 
 function getdisplaySnows()
