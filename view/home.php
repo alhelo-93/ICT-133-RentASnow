@@ -33,7 +33,8 @@ $title = "RentASnow - Accueil";
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($news as $onepieceofnews) { ?>
+    <?php
+    foreach ($news as $onepieceofnews) { ?>
         <tr>
             <td><?= $onepieceofnews['title'] ?></td>
             <td><?= $onepieceofnews['details'] ?></td>

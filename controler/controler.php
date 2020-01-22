@@ -15,31 +15,41 @@ function showloginform()
     require_once 'view/login.php';
 }
 
-function verifyloginform($username, $password)
+function cklogin($username, $password)
 {
-    //$_SESSION['out']= false;
+    $users = getUsers();
+var_dump((isset($_POST['uname']) && isset($_POST['password'])));
+var_dump($_POST['uname']);
+var_dump($password);
+    var_dump($_SESSION);
+    if (isset($username) && isset($password)) {
+        foreach ($users as $user) {
+            var_dump($users);
+            if ( $user["user"] == $username  && $user["password"] == $password) {
 
+                $_SESSION['username'] = $username;
 
-    $users = getusers();
-
-
-foreach ($users as $i => $user) {
-    if ($user["uname"] == $username && $user["psw"] == $password) {
-        $_SESSION["email"] = $username;
-        $_SESSION["password"] = $password;
-
-
-
+                $message =  '<p class=\"alert alert-success\" role=\"alert\"> Welcom '. $_SESSION["username"] . "</p>";
+            }
+        }
     }
-}
-    if(!isset($_SESSION["user"])){
-        $_SESSION["flashmessage"] = "Le nom d'utilisateur ou le mod de passe est incorrect";
-
+var_dump($_SESSION);
+    var_dump(isset($_SESSION['username']));
+    if (isset($_SESSION['username']) == false){
+        $message =  '<p class=\"alert alert-success\" role=\"alert\"> This User dose not exist '. $_SESSION["username"] . "</p>";
+        require_once 'view/login.php';
+    }else{
+        require_once 'view/loginsuccess.php';
     }
 
-
-    require_once 'view/loginsuccess.php';
 }
+
+function logout(){
+    unset($_SESSION['username']);
+    $news = getNews();
+    require_once 'view/home.php';
+}
+
 
 function getdisplaySnows()
 {
@@ -48,12 +58,12 @@ function getdisplaySnows()
     require_once 'view/displaySnows.php';
 }
 
-function distalisSnows()
+function detailsSnows()
 {
 
     $snows = getSnows();
 
-    require_once 'view/showditalis.php';
+    require_once 'view/showdetails.php';
 }
 
 

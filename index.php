@@ -1,11 +1,12 @@
 <?php
-
+session_start();
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
     $action = 'home';
 }
-session_start();
+$username = $_POST["uname"];
+$password = $_POST["psw"];
 
 require "controler/controler.php";
 
@@ -17,7 +18,12 @@ switch ($action) {
         break;
     case 'verifylogin';
 
-        verifyloginform($email,$password);
+        cklogin($username,$password);
+
+        break;
+    case 'logout';
+
+        logout();
 
         break;
 
@@ -26,9 +32,9 @@ switch ($action) {
         getdisplaySnows();
 
         break;
-    case 'showditalis';
+    case 'showdetails';
 
-        distalisSnows();
+        detailsSnows();
 
 
         break;

@@ -57,7 +57,14 @@
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
                         <li><a href="index.php?action=home">Home</a></li>
                         <li><a href="index.php?action=displaySnows">Snows</a></li>
-                        <li><a href="index.php?action=login">Login</a></li>
+                        <?php
+                        if(isset($_SESSION['username']) == false){
+
+                           echo '<li><a href="index.php?action=login">Login</a></li>';
+                        }else
+                        echo '<li><a href="index.php?action=logout">Logout</a></li>';
+
+                        ?>
                     </ul>
                 </div>
             </div>

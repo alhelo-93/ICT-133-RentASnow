@@ -1,7 +1,7 @@
 <?php
 /**
  *Created by ICT-133-RentASnow.
- *FILE_NAME:showditalis.php
+ *FILE_NAME:showdetails.php
  *USER:marwa
  *DATE:19.01.2020
  */
@@ -48,7 +48,7 @@ ob_start();
     <thead>
     <tr>
 
-        <th class="text-center">Discraption</th>
+        <th class="text-center">Description</th>
         <th class="text-center">Type</th>
 
 
