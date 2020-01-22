@@ -51,6 +51,7 @@
                 </div>
             </div>
             <br>
+
             <div class="row">
                 <div class="navbar">
                     <ul class="nav nav-pills">
@@ -63,11 +64,11 @@
                            echo '<li><a href="index.php?action=login">Login</a></li>';
                         }else
                         echo '<li><a href="index.php?action=logout">Logout</a></li>';
-
                         ?>
                     </ul>
                 </div>
             </div>
+            <?php echo   '<strong>' . $_SESSION["username"].'</strong>'; ?>
         </div>
         <br/><br/>
         <div class="contentArea">
