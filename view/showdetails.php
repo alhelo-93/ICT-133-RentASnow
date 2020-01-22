@@ -10,10 +10,8 @@
 
 $snows = getSnows();
 $product["id"] = $_GET["product"];
-?>
 
-
-<?php foreach ($snows as $snow) {
+foreach ($snows as $snow) {
     if ($snow["id"] == $product["id"]) {
         $product = [
 
@@ -66,7 +64,7 @@ ob_start();
 
     </tbody>
 </table>
-<button type="button" class="btn btn-outline-dark" ><a href="index.php?action=displaySnows" style="color: black">Retour</button>
+<button type="button" class="btn btn-outline-dark"><a href="index.php?action=displaySnows" >Retour</button>
 
 <?php
 $content = ob_get_clean();

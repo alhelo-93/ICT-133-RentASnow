@@ -51,8 +51,15 @@
                 </div>
             </div>
             <br>
+            <div class=" "> </div>
+            <?php if(($_SESSION["username"]) == true){
+                echo '<div class=" alert alert-success w-25 " role="alert" > ';
+                echo   '<strong class="">Enligne : ' . $_SESSION["username"].'</strong>';
+                echo '</div>';
+            }
 
-            <div class="row">
+        ?>
+            <div class="row float-right">
                 <div class="navbar">
                     <ul class="nav nav-pills">
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
@@ -65,10 +72,11 @@
                         }else
                         echo '<li><a href="index.php?action=logout">Logout</a></li>';
                         ?>
+
                     </ul>
                 </div>
             </div>
-            <?php echo   '<strong>' . $_SESSION["username"].'</strong>'; ?>
+
         </div>
         <br/><br/>
         <div class="contentArea">

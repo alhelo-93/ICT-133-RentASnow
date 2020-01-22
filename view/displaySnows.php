@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created BY PhpStorm.
+ * Title: ICT-133-RentASnow
+ * USER: Marwan.ALHELO
+ * DATE: 10.01.2020
+ * Time: 16:02
+ */
+?>
+
+<?php
 ob_start();
 $title = "RentASnow - DisplaySnows";
 ?>
@@ -17,12 +27,11 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
 
-
-
     </tr>
     </thead>
     <tbody >
     <?php foreach ($snows as $snow) { ?>
+
 
         <tr class="">
             <td class="align-middle"><?= $snow['id'] ?></td>
@@ -36,10 +45,16 @@ $title = "RentASnow - DisplaySnows";
         </tr>
         <tr>
 
-            <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure">Détails</button></td>
+            <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
+            <?php if($snow['disponible'] == false){
 
+                echo '<td class="align-middle"> '. $snow["dateretour"] .'</td>' ;
+
+            }else
+                echo 'test';
+
+             ?>
         </tr>
-
 
     <?php } ?>
     </tbody>

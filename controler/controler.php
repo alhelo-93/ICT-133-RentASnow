@@ -28,20 +28,21 @@ function cklogin($username, $password)
 
                 $_SESSION['username'] = $username;
 
-                $message = '<p class=\"alert alert-success\" role=\"alert\"> Welcom ' . $_SESSION["username"] . "</p>";
+                $message = ' Welcom ' . $_SESSION["username"] ;
+                require_once 'view/loginsuccess.php';
+                var_dump( $message);
             }
         }
     }
 
     if (isset($_SESSION['username']) == false) {
 
-        $message = '<p class="alert alert-danger" role=\"alert\"> This User dose not exist ' . $_SESSION["username"] . "</p>";
-
         require_once 'view/loginsuccess.php';
     } else {
         $news = getNews();
         require_once 'view/home.php';
     }
+
 }
 function logout(){
     unset($_SESSION['username']);
