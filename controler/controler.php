@@ -39,10 +39,10 @@ function cklogin($username, $password)
     var_dump(isset($_SESSION['username']));
     if (isset($_SESSION['username']) == false) {
         $message = '<p class=\"alert alert-success\" role=\"alert\"> This User dose not exist ' . $_SESSION["username"] . "</p>";
-        require_once 'view/login.php';
+        require_once 'view/loginsuccess.php';
     } else {
 
-        require_once 'view/loginsuccess.php';
+
     }
 }
 function logout(){
