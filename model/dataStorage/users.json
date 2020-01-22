@@ -1,20 +1,23 @@
 [
-  {
+  { "user": "samuel",
     "email": "samuel.roland@gmail.com",
-    "password": "Pa$$w0rd"
+    "password": "123456"
   },
   {
+    "user": "gatien",
     "email": "gatien.gyme@gmail.com",
     "password": "Pa$$w0rd"
   },
   {
+    "user": "altin",
     "email": "altin.zili@gmail.com",
-    "password": "Pa$$w0rd"
+    "password": "123456789"
   },
   {
+    "user": "simon",
     "email": "simon.cugny@gmail.com",
-    "password": "Pa$$w0rd"
-  },
+    "password": "12345"
+  }
 
 
 ]

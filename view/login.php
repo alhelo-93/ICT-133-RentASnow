@@ -24,13 +24,14 @@ $title = "RentASnow - LOGIN";
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" name="submit">Login</button>
 
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
 
-         <button type="button" class="cancelbtn"><a href="index.php?action=home.php" style="color: azure">Cancel</a></button>
+        <button type="button" class="cancelbtn"><a href="index.php?action=home.php" style="color: azure">Cancel</a>
+        </button>
     </div>
 
 </form>
