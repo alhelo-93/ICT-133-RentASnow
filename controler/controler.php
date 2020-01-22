@@ -17,6 +17,7 @@ function showloginform()
 
 function cklogin($username, $password)
 {
+
     $users = getUsers();
 var_dump((isset($_POST['uname']) && isset($_POST['password'])));
 var_dump($_POST['uname']);
@@ -40,14 +41,16 @@ var_dump($_SESSION);
         require_once 'view/login.php';
     }else{
         require_once 'view/loginsuccess.php';
-    }
 
-}
+
 
 function logout(){
     unset($_SESSION['username']);
     $news = getNews();
     require_once 'view/home.php';
+
+
+
 }
 
 
