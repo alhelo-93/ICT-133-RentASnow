@@ -27,7 +27,7 @@ foreach ($users as $i => $user) {
     if ($user["uname"] == $username && $user["psw"] == $password) {
         $_SESSION["email"] = $username;
         $_SESSION["password"] = $password;
-        var_dump($user);
+        
         require_once 'view/loginsuccess.php';
 
     }
