@@ -28,7 +28,7 @@ function cklogin($username, $password)
 
                 $_SESSION['username'] = $username;
 
-                $message = ' Welcom ' . $_SESSION["username"] ;
+                $message = ' Welcome ' . $_SESSION["username"] ;
                 require_once 'view/loginsuccess.php';
                 var_dump( $message);
             }
@@ -52,7 +52,6 @@ function logout(){
 
 
 }
-
 
 function getdisplaySnows()
 {

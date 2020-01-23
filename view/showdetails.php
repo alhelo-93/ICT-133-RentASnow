@@ -21,7 +21,9 @@ foreach ($snows as $snow) {
             "Brand" => $snow["Brand"],
             "image" => $snow["image"],
             "bigimage" => $snow["bigimage"],
-            "description" => $snow["description"]
+            "description" => $snow["description"],
+            "dateretour" => $snow["dateretour"],
+            "disponible" => $snow["disponible"]
         ];
     }
 
@@ -48,6 +50,7 @@ ob_start();
 
         <th class="text-center">Description</th>
         <th class="text-center">Type</th>
+        <th class="text-center">Date de retour</th>
 
 
     </tr>
@@ -55,8 +58,17 @@ ob_start();
     <tbody>
 
     <tr>
-        <td class="text-center"><?= $product['description'] ?></td>
+        <td class="text-center"> <?= $product['description'] ?></td>
         <td class="text-center"><?= $product['Type'] ?></td>
+        <?php if($product['disponible'] == false){
+            echo '<td class="text-center">'.date("d.m.Y", strtotime($product['dateretour']))."</td>";
+        } else{
+
+            echo '<td class="text-center"> à definir </td>';
+        }
+
+        ?>
+
     </tr>
     <tr>
         <td></td>
