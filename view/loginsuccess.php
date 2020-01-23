@@ -28,9 +28,7 @@ $title = "RentASnow - Welcome";
 
 }
 
-
 ?>
-
 
 <?php
 $content = ob_get_clean();

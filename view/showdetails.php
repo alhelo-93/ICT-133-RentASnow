@@ -7,7 +7,7 @@
  */
 ?>
 <?php
-
+// to get each item in row with all details
 $snows = getSnows();
 $product["id"] = $_GET["product"];
 

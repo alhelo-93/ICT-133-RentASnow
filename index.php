@@ -1,5 +1,16 @@
 <?php
+/**
+ * Created BY PhpStorm.
+ * Title: ICT-133-RentASnow
+ * USER: Marwan.ALHELO
+ * DATE: 10.01.2020
+ * Time: 16:02
+ */
+
+?>
+<?php
 session_start();
+// to go home by default
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
@@ -7,6 +18,7 @@ if (isset($_GET['action'])) {
 }
 $username = $_POST["uname"];
 $password = $_POST["psw"];
+
 
 require "controler/controler.php";
 
@@ -36,6 +48,10 @@ switch ($action) {
 
         detailsSnows();
 
+        break;
+    case 'showdetails';
+
+        deleteSnows();
 
         break;
 
