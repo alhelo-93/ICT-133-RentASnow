@@ -18,6 +18,25 @@ $title = "RentASnow - DisplaySnows";
 
 <h1 style="text-align: center">Products</h1>
 <br>
+<div class="row">
+    <div class="navbar">
+        <ul class="nav nav-pills">
+            <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
+            <li><a href="index.php?action=home">Home</a></li>
+            <li><a href="index.php?action=displaySnows">Snows</a></li>
+            <?php
+            if(isset($_SESSION['username']) == false){
+
+                echo '<li><a href="index.php?action=login">Login</a></li>';
+            }else
+                echo '<li><a href="index.php?action=logout">Logout</a></li>';
+            ?>
+
+        </ul>
+    </div>
+</div>
+<br>
+<br>
 <table class="table">
     <thead>
     <tr>
@@ -26,6 +45,7 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Type</th>
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
+
 
     </tr>
     </thead>
@@ -43,18 +63,25 @@ $title = "RentASnow - DisplaySnows";
 
 
         </tr>
-        <tr>
+        <tr >
 
             <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
+
             <?php if($snow['disponible'] == false){
 
-                echo '<td class="align-middle"> '. $snow["dateretour"] .'</td>' ;
+                echo '<td class="align-middle "> '. date("d.m.Y", strtotime($snow['dateretour'])).'</td>' ;
 
             }else
-                echo 'test';
+
 
              ?>
+
         </tr>
+            <tr>
+                <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
+                <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
+
+            </tr>
 
     <?php } ?>
     </tbody>
