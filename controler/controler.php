@@ -71,6 +71,8 @@ function detailsSnows()
 
     require_once 'view/showdetails.php';
 }
+
+// its work
 function dropSnow($snow_id)
 {
 
@@ -79,13 +81,35 @@ function dropSnow($snow_id)
 
     require_once 'view/displaySnows.php';
 }
-function greatnewitem()
+//work in progress
+function greatenewitem($newsnow_color)
 {
 
-    $snows = newsnows();
+    $snows = newsnows($newsnow_color);
 
-    require_once 'view/newnows.php';
+    require_once 'view/displaySnows.php';
 }
+//work in progress
+function greatesnow($id,$name,$Type,$Color,$Brand,$disponible)
+{
+    $snows = getSnows();
+    if (isset($id) && isset($name)&& isset($Type)&& isset($Color)&& isset($Brand)&& isset($disponible)){
+
+        foreach ($snows as $snow) {
+            if ($snow["id"] == $id && $snow["name"] == $name&& $snow["Type"]==$Type&&$snow["Color"] ==$Color&&$snow["Brand"]==$Brand&&$snow["disponible"]==$disponible){
+
+                $snows = addsnow($id,$name,$Type,$Color,$Brand,$disponible);
+                            $message="vous avez bien ajouté ce snow ";
+            }
+        }
+
+    }
+
+
+
+    require_once 'view/displaySnows.php';
+}
+
 
 
 ?>

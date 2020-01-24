@@ -39,7 +39,9 @@ $title = "RentASnow - DisplaySnows";
             <td class="align-middle"><?= $snow['id'] ?></td>
             <td class="align-middle"><?= $snow['name'] ?></td>
             <td class="align-middle"><?= $snow['Type'] ?></td>
-            <td class="align-middle"><?= $snow['Color'] ?></td>
+            <?php if(($_SESSION["username"] ) == true){ ?>
+            <td class="align-middle"><input type="text" name="FirstName" value="<?= $snow['Color'] ?>"></td>
+            <?php }?>
             <td class="align-middle"><?= $snow['Brand'] ?></td>
             <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
         </tr>
@@ -48,7 +50,7 @@ $title = "RentASnow - DisplaySnows";
             </td>
             <?php if(($_SESSION["username"]) == true){ ?>
             <td><button  type="button"><a href="index.php?action=deleteitem&product=<?= $snow['id']?>" style="color: azure"  >Supprimer</button>
-            <td><button  type="button"><a href="index.php?action=deleteitem&product=<?= $snow['id']?>" style="color: azure"  >Ajouter</button>
+
            <?php }?>
 
             </td>
@@ -70,7 +72,7 @@ $title = "RentASnow - DisplaySnows";
     </tbody>
 </table>
 <?php if(($_SESSION["username"]) == true){
-    echo '<th class="text-center"><button  type="button" onclick=""><a href="index.php?action=newsnow" style="color: azure" >Ajouter</button></th>';
+    echo '<th class="text-center"><button  type="button" onclick=""><a href="index.php?action=addnewsnow" style="color: azure" >Ajouter</button></th>';
 }
 ?>
 <?php
