@@ -26,8 +26,12 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Type</th>
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
+
+
+
     </tr>
     </thead>
+
     <tbody >
     <?php foreach ($snows as $snow) { ?>
 
@@ -40,8 +44,15 @@ $title = "RentASnow - DisplaySnows";
             <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
         </tr>
         <tr>
-            <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button>
+            <td><button  type="button"><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button>
             </td>
+            <?php if(($_SESSION["username"]) == true){ ?>
+            <td><button  type="button"><a href="index.php?action=deleteitem&product=<?= $snow['id']?>" style="color: azure"  >Supprimer</button>
+            <td><button  type="button"><a href="index.php?action=deleteitem&product=<?= $snow['id']?>" style="color: azure"  >Ajouter</button>
+           <?php }?>
+
+            </td>
+
         </tr>
         <tr>
             <td></td>
@@ -50,15 +61,18 @@ $title = "RentASnow - DisplaySnows";
             <td></td>
             <td></td>
             <?php if($snow['disponible'] == false){
-                echo '<td class="align-middle alert alert-danger h-25  d-inline-block float-right">'." Ce n'est dispenbile "."</td>" ;
+                echo '<td class="align-middle alert alert-danger h-25  d-inline-block float-right">'." Ce n'est disponible "."</td>" ;
             }else
-                echo '<td class="align-middle alert alert-success h-25 d-inline-block">'." C'est dispenbile "."</td>" ;
+                echo '<td class="align-middle alert alert-success h-25 d-inline-block">'." C'est disponible "."</td>" ;
             ?>
         </tr>
     <?php } ?>
     </tbody>
 </table>
-
+<?php if(($_SESSION["username"]) == true){
+    echo '<th class="text-center"><button  type="button" onclick=""><a href="index.php?action=newsnow" style="color: azure" >Ajouter</button></th>';
+}
+?>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";

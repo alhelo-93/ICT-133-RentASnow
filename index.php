@@ -49,8 +49,13 @@ switch ($action) {
 
         break;
     case 'deleteitem';
+        $snow_id= $_GET['product'];
+        dropSnow($snow_id);
 
-        dropSnows();
+        break;
+    case 'newsnow';
+
+        greatnewitem();
 
         break;
 

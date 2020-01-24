@@ -71,12 +71,21 @@ function detailsSnows()
 
     require_once 'view/showdetails.php';
 }
-function dropSnows()
+function dropSnow($snow_id)
 {
 
-    $snows = getSnows();
+    $snows = removeSnow($snow_id);
+
 
     require_once 'view/displaySnows.php';
 }
+function greatnewitem()
+{
+
+    $snows = newsnows();
+
+    require_once 'view/newnows.php';
+}
+
 
 ?>
