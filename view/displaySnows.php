@@ -13,7 +13,6 @@ ob_start();
 $title = "RentASnow - DisplaySnows";
 ?>
 
-
 <!-- ________ NEWS _____________-->
 
 <h1 style="text-align: center">Products</h1>
@@ -27,13 +26,10 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Type</th>
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
-
-
     </tr>
     </thead>
     <tbody >
     <?php foreach ($snows as $snow) { ?>
-
 
         <tr class="">
             <td class="align-middle"><?= $snow['id'] ?></td>
@@ -43,25 +39,25 @@ $title = "RentASnow - DisplaySnows";
             <td class="align-middle"><?= $snow['Brand'] ?></td>
             <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
         </tr>
-        <tr >
-            <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
-            <?php if($snow['disponible'] == false){
-
-            echo '<td class="align-middle alert alert-danger">'." Ce n'est dispenbile "."</td>" ;
-            }else
-                echo '<td class="align-middle alert alert-success">'." C'est dispenbile "."</td>" ;
-             ?>
+        <tr>
+            <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button>
+            </td>
         </tr>
-            <tr>
-                <td><button  type="button" onclick=""><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button></td>
-                
-
-            </tr>
-
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <?php if($snow['disponible'] == false){
+                echo '<td class="align-middle alert alert-danger h-25  d-inline-block float-right">'." Ce n'est dispenbile "."</td>" ;
+            }else
+                echo '<td class="align-middle alert alert-success h-25 d-inline-block">'." C'est dispenbile "."</td>" ;
+            ?>
+        </tr>
     <?php } ?>
     </tbody>
 </table>
-
 
 <?php
 $content = ob_get_clean();

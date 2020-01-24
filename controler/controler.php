@@ -19,10 +19,11 @@ function showloginform()
 function cklogin($username, $password)
 {
 
-
+    // to read all users from json
     $users = getUsers();
 
     if (isset($username) && isset($password)) {
+        // to check each user psw and uname
         foreach ($users as $user) {
 
             if ($user["user"] == $username && $user["password"] == $password) {
@@ -53,8 +54,6 @@ function logout(){
     $news = getNews();
     require_once 'view/home.php';
 
-
-
 }
 
 // to show all snowborad itmes
@@ -72,14 +71,12 @@ function detailsSnows()
 
     require_once 'view/showdetails.php';
 }
-
-function deleteSnows()
+function dropSnows()
 {
 
     $snows = getSnows();
 
     require_once 'view/displaySnows.php';
 }
-
 
 ?>

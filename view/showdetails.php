@@ -66,12 +66,10 @@ ob_start();
 
             echo '<td class="text-center"> à definir </td>';
         }
-
         ?>
-
     </tr>
     <tr>
-        <td></td>
+
     </tr>
 
     </tbody>

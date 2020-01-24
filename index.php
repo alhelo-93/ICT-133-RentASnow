@@ -19,7 +19,6 @@ if (isset($_GET['action'])) {
 $username = $_POST["uname"];
 $password = $_POST["psw"];
 
-
 require "controler/controler.php";
 
 switch ($action) {
@@ -49,9 +48,9 @@ switch ($action) {
         detailsSnows();
 
         break;
-    case 'showdetails';
+    case 'deleteitem';
 
-        deleteSnows();
+        dropSnows();
 
         break;
 
@@ -60,6 +59,5 @@ switch ($action) {
 
         break;
 }
-
 
 ?>
