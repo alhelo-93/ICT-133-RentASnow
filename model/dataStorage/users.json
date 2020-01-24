@@ -1,20 +1,24 @@
 [
-  { "user": "samuel",
+  { "id": 1,
+    "user": "samuel",
     "email": "samuel.roland@gmail.com",
     "password": "123456",
     "type": "employe"
   },
   {
+    "id": 2,
     "user": "gatien",
     "email": "gatien.gyme@gmail.com",
     "password": "Pa$$w0rd"
   },
   {
+    "id": 3,
     "user": "altin",
     "email": "altin.zili@gmail.com",
     "password": "123456789"
   },
   {
+    "id": 4,
     "user": "simon",
     "email": "simon.cugny@gmail.com",
     "password": "12345"
