@@ -85,22 +85,18 @@ function dropSnow($snow_id)
 function createnewitem()
 {
 
-
-
     require_once 'view/newsnow.php';
 }
 //work in progress
 //
-function createsnow($id,$name,$Type,$Color,$Brand,$disponible)
+function createsnow($name,$Type,$Color,$Brand)
 {
     $snows = getSnows();
-    if (isset($id) && isset($name)&& isset($Type)&& isset($Color)&& isset($Brand)&& isset($disponible)){
+    if (isset($name)&& isset($Type)&& isset($Color)&& isset($Brand)){
 
-        newsnows();
+        newsnow( $name, $Type, $Color, $Brand);
 
     }
-
-
 
     require_once 'view/displaySnows.php';
 }

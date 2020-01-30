@@ -17,17 +17,10 @@ if (isset($_GET['action'])) {
     $action = 'home';
 }
 // parameters for login and checking login
-$username = $_POST["uname"];
-$password = $_POST["psw"];
+
 
 // parameters for add article
-$id = $_POST["id"];
-$name = $_POST["name"];
-$Type = $_POST["Type"];
-$Color = $_POST["Color"];
-$Brand = $_POST["Brand"];
-$dateretour = $_POST["dateretour"];
-$disponible = $_POST["disponible"];
+
 
 require "controler/controler.php";
 
@@ -39,7 +32,11 @@ switch ($action) {
         break;
     case 'verifylogin';
 
+        $username = $_POST["uname"];
+        $password = $_POST["psw"];
+
         cklogin($username, $password);
+
 
         break;
     case 'logout';
@@ -71,6 +68,12 @@ switch ($action) {
         break;
     case 'addnewsnow';
 
+        $name = $_POST["name"];
+        $Type = $_POST["Type"];
+        $Color = $_POST["Color"];
+        $Brand = $_POST["Brand"];
+
+        createsnow($name, $Type, $Color, $Brand);
 
 
         break;

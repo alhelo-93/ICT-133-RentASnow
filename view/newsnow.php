@@ -15,8 +15,6 @@ $title = "RentASnow - newsnows";
 <h1 style="text-align: center"> Add new Snowboard</h1>
 <form method="post" action="index.php?action=addnewsnow">
     <div class="form-group w-50 p-3">
-        <label for="formGroupExampleInput">Numéro</label>
-        <input type="number" min="1" class="form-control " id="formGroupExampleInput" placeholder="numéro" name="id" required>
         <label for="formGroupExampleInput2">name</label>
         <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="name" name="name" required>
         <label for="formGroupExampleInput2">Type</label>
@@ -25,10 +23,8 @@ $title = "RentASnow - newsnows";
         <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Color" name="Color" required>
         <label for="formGroupExampleInput2">Brand</label>
         <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Brand"  name="Brand" required>
-        <label for="formGroupExampleInput2">dateretour</label>
-        <input type="date" class="form-control " id="formGroupExampleInput2" placeholder="dateretour" name="dateretour" required>
-        <label for="formGroupExampleInput2">disponible</label>
-        <input type="checkbox" class="form-control " id="formGroupExampleInput2" placeholder="disponible"  name="disponible" required>
+        <label for="formGroupExampleInput2">Brand</label>
+        <input type="file" class="form-control " id="formGroupExampleInput2" placeholder="Brand"  name="image" required>
         <button type="submit" class="btn btn-outline-dark">ajouter</button>
 
     </div>
