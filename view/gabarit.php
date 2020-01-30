@@ -52,7 +52,7 @@
             </div>
             <br>
 
-            <?php if(($_SESSION["username"]) == true){
+            <?php if(isset($_SESSION["username"])){
                 echo '<div class=" alert alert-success w-25 float-right " role="alert" > ';
                 echo   '<strong class="">Connecté : ' . $_SESSION["username"].'</strong>';
                 echo '</div>';

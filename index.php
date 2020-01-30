@@ -64,16 +64,17 @@ switch ($action) {
 
         break;
     case 'newsnow';
-        $newsnow_color = $_GET['product'];
 
-        greatenewitem($newsnow_color);
+
+        createnewitem();
 
         break;
     case 'addnewsnow';
 
-        greatesnow($id,$name,$Type,$Color,$Brand,$disponible);
+
 
         break;
+
 
     default;
         home();

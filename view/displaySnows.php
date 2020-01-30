@@ -71,8 +71,8 @@ $title = "RentASnow - DisplaySnows";
     <?php } ?>
     </tbody>
 </table>
-<?php if(($_SESSION["username"]) == true){
-    echo '<th class="text-center"><button  type="button" onclick=""><a href="index.php?action=addnewsnow" style="color: azure" >Ajouter</button></th>';
+<?php if(isset($_SESSION["username"])){
+    echo '<th class="text-center"><button  type="button" onclick=""><a href="index.php?action=newsnow" style="color: azure" >Ajouter</button></th>';
 }
 ?>
 <?php
