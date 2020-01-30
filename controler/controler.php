@@ -89,8 +89,22 @@ function createnewitem()
 }
 //work in progress
 //
-function createsnow($name,$Type,$Color,$Brand)
+function createsnow($name,$Type,$Color,$Brand,$image)
 {
+    if(isset($_FILES['image'])){
+        $tmp_name = $_FILES['image']['tmp_name'];
+        $image =  $_FILES['image']['name'];
+        $destination = "view/images/";
+        $contentFormat = array('.jpg','.JPG','.png','.PNG');
+        $format = strchr($_FILES['image']['name'], '.' ) ;
+       if( in_array($format,$contentFormat)){
+           if(  move_uploaded_file($tmp_name,$destination)){
+               require "view/displaySnows.php";
+           }
+
+       }
+
+    }
     $snows = getSnows();
     if (isset($name)&& isset($Type)&& isset($Color)&& isset($Brand)){
 

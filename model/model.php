@@ -46,7 +46,7 @@ function removeSnow($snow_id)
             unset($snows[$key]);
         }
     }
-    file_put_contents('snows.json', json_encode($snows));
+    file_put_contents('model/dataStorage/snows.json', json_encode($snows));
     return $snows;
 }
 

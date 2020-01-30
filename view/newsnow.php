@@ -13,7 +13,7 @@ $title = "RentASnow - newsnows";
 ?>
 
 <h1 style="text-align: center"> Add new Snowboard</h1>
-<form method="post" action="index.php?action=addnewsnow">
+<form method="post" action="index.php?action=addnewsnow" enctype="multipart/form-data">
     <div class="form-group w-50 p-3">
         <label for="formGroupExampleInput2">name</label>
         <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="name" name="name" required>

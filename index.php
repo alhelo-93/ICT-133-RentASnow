@@ -6,6 +6,7 @@
  * DATE: 10.01.2020
  * Time: 16:02
  */
+var_dump($_FILES);
 
 ?>
 <?php
@@ -68,13 +69,16 @@ switch ($action) {
         break;
     case 'addnewsnow';
 
+
+
         $name = $_POST["name"];
         $Type = $_POST["Type"];
         $Color = $_POST["Color"];
         $Brand = $_POST["Brand"];
+        $image = $_POST["image"];
 
-        createsnow($name, $Type, $Color, $Brand);
 
+        createsnow($name, $Type, $Color, $Brand,$image);
 
         break;
 
