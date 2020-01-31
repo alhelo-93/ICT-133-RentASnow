@@ -6,7 +6,6 @@
  * DATE: 10.01.2020
  * Time: 16:02
  */
-var_dump($_FILES);
 
 ?>
 <?php
@@ -75,10 +74,14 @@ switch ($action) {
         $Type = $_POST["Type"];
         $Color = $_POST["Color"];
         $Brand = $_POST["Brand"];
-        $image = $_POST["image"];
+        $image =  $_FILES['image'];
+        $tmp_name = $_FILES['image']['tmp_name'];
+        $imageName =  $_FILES['image']['name'];
 
 
-        createsnow($name, $Type, $Color, $Brand,$image);
+
+
+        createsnow($name, $Type, $Color, $Brand,$imageName,$tmp_name,$image);
 
         break;
 

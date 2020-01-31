@@ -89,30 +89,26 @@ function createnewitem()
 }
 //work in progress
 //
-function createsnow($name,$Type,$Color,$Brand,$image)
+function createsnow($name,$Type,$Color,$Brand,$imageName,$tmp_name,$image)
 {
-    if(isset($_FILES['image'])){
-        $tmp_name = $_FILES['image']['tmp_name'];
-        $image =  $_FILES['image']['name'];
-        $destination = "view/images/";
+    if(!empty(isset($image))){
+//
+        $destination = "view/images/".$imageName;
         $contentFormat = array('.jpg','.JPG','.png','.PNG');
-        $format = strchr($_FILES['image']['name'], '.' ) ;
-       if( in_array($format,$contentFormat)){
-           if(  move_uploaded_file($tmp_name,$destination)){
-               require "view/displaySnows.php";
-           }
+        $format = strchr($imageName, '.' ) ;
+       if(in_array($format,$contentFormat)){
+             move_uploaded_file($tmp_name,$destination);
+
+
 
        }
-
+        getdisplaySnows();
     }
-    $snows = getSnows();
     if (isset($name)&& isset($Type)&& isset($Color)&& isset($Brand)){
-
-        newsnow( $name, $Type, $Color, $Brand);
-
+        newsnow( $name, $Type, $Color, $Brand,$imageName);
     }
 
-    require_once 'view/displaySnows.php';
+    getdisplaySnows();
 }
 
 

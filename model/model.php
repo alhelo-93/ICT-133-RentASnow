@@ -15,7 +15,7 @@ function getUsers()
     return json_decode(file_get_contents("model/dataStorage/users.json"), true);
 }
 
-function newsnow( $name, $Type, $Color, $Brand)
+function newsnow( $name, $Type, $Color, $Brand, $imageName)
 {
     $snows = getSnows();
     // generate ID
@@ -30,6 +30,7 @@ function newsnow( $name, $Type, $Color, $Brand)
             "Type" => $Type,
             "Color" => $Color,
             "Brand" => $Brand,
+            'image' => $imageName
 
         ];
 
