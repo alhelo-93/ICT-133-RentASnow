@@ -1,4 +1,4 @@
-newsDROP DATABASE IF EXISTS `snows`;
+DROP DATABASE IF EXISTS `snows`;
 CREATE DATABASE  IF NOT EXISTS `snows` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `snows`;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
