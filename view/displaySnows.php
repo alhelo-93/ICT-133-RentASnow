@@ -27,8 +27,6 @@ $title = "RentASnow - DisplaySnows";
         <th class="text-center">Color</th>
         <th class="text-center">Brand</th>
 
-
-
     </tr>
     </thead>
 
