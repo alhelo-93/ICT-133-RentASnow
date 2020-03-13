@@ -22,10 +22,14 @@ $title = "RentASnow - DisplaySnows";
     <thead>
     <tr>
         <th>#°</th>
-        <th class="text-center">name</th>
-        <th class="text-center">Type</th>
-        <th class="text-center">Color</th>
-        <th class="text-center">Brand</th>
+        <th class="text-center">brand</th>
+        <th class="text-center">model</th>
+        <th class="text-center">descrption</th>
+        <th class="text-center">photo</th>
+        <th class="text-center">pricenew</th>
+        <th class="text-center">pricegood</th>
+        <th class="text-center">priceold</th>
+
 
     </tr>
     </thead>
@@ -35,13 +39,17 @@ $title = "RentASnow - DisplaySnows";
 
         <tr class="">
             <td class="align-middle"><?= $snow['id'] ?></td>
-            <td class="align-middle"><?= $snow['name'] ?></td>
-            <td class="align-middle"><?= $snow['Type'] ?></td>
+            <td class="align-middle"><?= $snow['brand'] ?></td>
+            <td class="align-middle"><?= $snow['model'] ?></td>
+            <td class="align-middle"><?= $snow['description'] ?></td>
+            <td class="align-middle"><?= $snow['pricenew'] ?></td>
+            <td class="align-middle"><?= $snow['pricegood'] ?></td>
+            <td class="align-middle"><?= $snow['priceold'] ?></td>
             <?php if(($_SESSION["username"] ) == true){ ?>
             <td class="align-middle"><input type="text" name="FirstName" value="<?= $snow['Color'] ?>"></td>
             <?php }?>
             <td class="align-middle"><?= $snow['Brand'] ?></td>
-            <td><img src="view/images/<?= $snow['image'] ?>" class="polaroid">
+            <td><img src="view/images/<?= $snow['photo'] ?>" class="polaroid">
         </tr>
         <tr>
             <td><button  type="button"><a href="index.php?action=showdetails&product=<?= $snow['id']?>" style="color: azure"  >Détails</button>

@@ -32,7 +32,22 @@ function getNews()
 
 function getSnows()
 {
-    return json_decode(file_get_contents("model/dataStorage/snows.json"), true);
+    //return json_decode(file_get_contents("model/dataStorage/snows.json"), true);
+
+    require ".const.php";
+
+    try {
+        $dbh = getPDO();
+        $query = 'SELECT * FROM snows.snowtypes ';
+        $statment = $dbh->prepare($query);
+        $statment->execute();//prepare query
+        $queryResult = $statment->fetchAll(PDO::FETCH_ASSOC);//prepare result for client
+        $dbh = null;
+        return $queryResult;
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        return null;
+    }
 }
 
 function getUsers()
