@@ -26,9 +26,10 @@ $title = "RentASnow - Accueil";
 <table class="table table-bordered">
     <thead>
     <tr>
-        <th>Title</th>
-        <th>details</th>
-        <th>Date</th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Title</th>
+        <th class="text-center">Details</th>
+        <th class="text-center">Auteur</th>
 
     </tr>
     </thead>
@@ -36,9 +37,11 @@ $title = "RentASnow - Accueil";
     <?php
     foreach ($news as $onepieceofnews) { ?>
         <tr>
-            <td><?= $onepieceofnews['title'] ?></td>
-            <td><?= $onepieceofnews['details'] ?></td>
-            <td><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></td>
+            <td ><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></td>
+            <td ><?= $onepieceofnews['title'] ?></td>
+            <td><?= $onepieceofnews['text'] ?></td>
+            <td><?= $onepieceofnews['firstname'] ?></td>
+
         </tr>
     <?php } ?>
     </tbody>

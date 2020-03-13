@@ -21,6 +21,7 @@
     <link href="assets/camera/css/camera.css" rel="stylesheet" type="text/css"/>
 
 
+
     <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
@@ -31,6 +32,7 @@
     <link href="css/subtlepatterns/custom.css" rel="stylesheet" type="text/css"/>
     <link href="css/loginform.css" rel="stylesheet" type="text/css"/>
     <link href="css/shoppingcart.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
