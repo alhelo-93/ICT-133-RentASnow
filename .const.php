@@ -7,7 +7,7 @@
  * Time: 15:50
  */
 
-$user='ICT-151';
-$pass='Pa$$w0rd';
+$user='root';
+$pass='root';
 $dbhost='localhost';
 $dbname=  'snows' ;

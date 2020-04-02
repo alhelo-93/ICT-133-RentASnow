@@ -17,7 +17,8 @@ function getNews()
 
         try {
             $dbh = getPDO();
-            $query = 'SELECT * FROM snows.news INNER JOIN users on user_id = users.id';
+            $query = 'SELECT * FROM snows.news INNER JOIN users on news.user_id = users.id 
+                       ORDER By Date';
             $statment = $dbh->prepare($query);
             $statment->execute();//prepare query
             $queryResult = $statment->fetchAll(PDO::FETCH_ASSOC);//prepare result for client
