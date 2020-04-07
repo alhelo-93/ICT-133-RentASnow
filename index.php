@@ -52,7 +52,11 @@ switch ($action) {
         break;
     case 'showdetails';
 
-        detailsSnows();
+    detailsSnows();
+
+    case 'snowmodel';
+
+        snowsModel();
 
         break;
     case 'deleteitem';

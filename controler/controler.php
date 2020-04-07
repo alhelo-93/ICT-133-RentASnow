@@ -71,8 +71,16 @@ function detailsSnows()
 
     require_once 'view/showdetails.php';
 }
+function snowsModel()
+{
 
-// its work
+    $snows = getSnowsModele();
+
+    require_once 'view/snowsModel.php.php';
+}
+
+
+// it works!!!
 function dropSnow($snow_id)
 {
 
